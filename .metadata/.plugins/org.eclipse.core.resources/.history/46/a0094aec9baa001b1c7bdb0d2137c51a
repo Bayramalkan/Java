@@ -1,0 +1,12 @@
+package polymorphisim;
+
+public class CustomerManager  {
+	private BaseLogger logger;
+	public CustomerManager(BaseLogger baseLogger) {
+		this.logger = logger;
+	}
+	public void Add() {
+		System.out.println("Müþteri eklendi");
+	}
+
+}

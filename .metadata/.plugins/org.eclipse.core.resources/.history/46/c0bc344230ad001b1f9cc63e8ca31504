@@ -1,0 +1,14 @@
+package day4homework.Managers;
+
+import day4homework3.Entities.Customer;
+import day4homework3.Utilites.CustomerValidator;
+
+public class CustomerManager {
+    public void add(Customer customer){
+        if (CustomerValidator.isValid(customer)){
+            System.out.println("Sisteme hoş geldin "+customer.getFirstName());
+        }else{
+            System.out.println("Bilgileriniz yanlış");
+        }
+    }
+}

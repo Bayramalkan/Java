@@ -1,0 +1,15 @@
+package odev3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		User user = new User();
+		user.setFirstName("Bayram");
+		user.setLastName("ALKAN");
+		user.getUserNumber("11");
+		
+
+	}
+
+}

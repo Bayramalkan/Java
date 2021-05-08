@@ -1,0 +1,39 @@
+package day5homework1.business.concretes;
+
+import java.util.List;
+
+import day5homework1.business.abstracts.CustomerService;
+import day5homework1.dataAccess.abstracts.CustomerDao;
+import day5homework1.entities.concretes.Customer;
+
+public class CustomerManager implements CustomerService{
+	
+	private CustomerDao customerDao;
+	
+	public CustomerManager(CustomerDao customerDao) {
+		super();
+		this.customerDao = customerDao;
+	}
+
+	@Override
+	public void checkCustomer(Customer customer) {
+		if(!customer.getEmail().matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,6}$")
+				&& customer.getName().length()>=2 && customer.getLastName().length()>=2
+				) {
+			System.out.println("Email doðrulandý. "+customer.getEmail());
+		}else {
+			System.out.println("Email doðrulanamadý. "+customer.getEmail());
+			return;
+		}
+		this.customerDao.singUp(customer);
+		this.customerDao.singIn(customer);
+	}
+
+	@Override
+	public List<Customer> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

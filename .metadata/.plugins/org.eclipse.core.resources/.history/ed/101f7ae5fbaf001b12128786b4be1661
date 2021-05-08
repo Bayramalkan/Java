@@ -1,0 +1,19 @@
+package day5homework1.dataAccess.concretes;
+
+import day5homework1.dataAccess.abstracts.CustomerDao;
+
+public class GoogleDao implements CustomerDao{
+
+	@Override
+	public void singUp() {
+		System.out.println("Google hesabý ile baþarýyla kayýt oldunuz.");
+		
+	}
+
+	@Override
+	public void singIn() {
+		System.out.println("Google hesabý ile baþarýyla giriþ yaptýnýz.");
+		
+	}
+
+}

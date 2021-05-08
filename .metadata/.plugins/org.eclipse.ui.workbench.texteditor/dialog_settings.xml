@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="&#x0D;&#x0A;&#x09;&#x09;product.setName(&quot;Laptop&quot;);&#x0D;&#x0A;&#x09;&#x09;product.setId(1);&#x0D;&#x0A;&#x09;&#x09;product.setDescription(&quot;Asus Laptop&quot;);&#x0D;&#x0A;&#x09;&#x09;product.setPrice(5000);&#x0D;&#x0A;&#x09;&#x09;product.setStockAmount(3);"/>
+		<list key="findhistory">
+			<item value="&#x0D;&#x0A;&#x09;&#x09;product.setName(&quot;Laptop&quot;);&#x0D;&#x0A;&#x09;&#x09;product.setId(1);&#x0D;&#x0A;&#x09;&#x09;product.setDescription(&quot;Asus Laptop&quot;);&#x0D;&#x0A;&#x09;&#x09;product.setPrice(5000);&#x0D;&#x0A;&#x09;&#x09;product.setStockAmount(3);"/>
+		</list>
+	</section>
+</section>

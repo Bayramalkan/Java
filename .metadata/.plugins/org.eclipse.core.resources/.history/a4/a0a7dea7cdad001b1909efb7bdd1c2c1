@@ -1,0 +1,16 @@
+package interfaces;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// interface lerin referansýný new leyebilirsin
+		/*
+		 * ICustomerDal customerDal = new OracleCustomerDal(); customerDal.add();
+		 */
+		
+		CustomerManager customerManager = new CustomerManager();
+		customerManager.add();
+	
+	}
+
+}

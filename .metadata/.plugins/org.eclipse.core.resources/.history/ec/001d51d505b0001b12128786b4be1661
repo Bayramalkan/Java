@@ -1,0 +1,20 @@
+import day5homework1.business.abstracts.CustomerService;
+import day5homework1.business.concretes.CustomerManager;
+import day5homework1.dataAccess.concretes.GoogleDao;
+import day5homework1.entities.concretes.Customer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CustomerService customerService = new CustomerManager(new GoogleDao());
+		
+		Customer customer = new Customer("bayram","alkan","","123456");
+		Customer customer2 = new Customer("bayram","alkan","bayramalkan1111@ogrenci.beykoz.edu.tr","123456");
+		Customer customer3 = new Customer("bayram", "alkan","bayramalkan@ogrenci.beykoz.edu.tr","123456");
+		customerService.checkCustomerSingUp(customer);
+		customerService.checkCustomerSingIn(customer);
+		customerService.checkCustomerEmail(customer, customer3);
+		
+	}
+
+}

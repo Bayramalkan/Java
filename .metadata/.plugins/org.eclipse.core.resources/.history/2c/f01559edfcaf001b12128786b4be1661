@@ -1,0 +1,5 @@
+package day5homework1.entities.concretes;
+
+public class Customer {
+
+}

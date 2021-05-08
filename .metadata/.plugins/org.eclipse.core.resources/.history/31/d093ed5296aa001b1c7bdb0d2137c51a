@@ -1,0 +1,6 @@
+package polymorphisim;
+
+public class Main {
+	EmailLogger logger = new EmailLogger();
+	logger.Log("sa");
+}

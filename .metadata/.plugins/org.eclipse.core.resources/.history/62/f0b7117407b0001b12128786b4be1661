@@ -1,0 +1,5 @@
+package day5homework1.dataAccess.concretes;
+
+public class FacebookDao {
+
+}

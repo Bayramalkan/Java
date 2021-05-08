@@ -1,0 +1,23 @@
+package day5homework1.business.concretes;
+
+import java.util.List;
+
+import day5homework1.business.abstracts.CustomerService;
+import day5homework1.entities.concretes.Customer;
+
+public class CustomerManager implements CustomerService{
+
+	@Override
+	public void checkCustomer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Customer> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

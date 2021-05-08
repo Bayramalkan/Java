@@ -1,0 +1,11 @@
+package polymorphisim;
+
+public class CustomerManager  {
+	
+	public void Add() {
+		System.out.println("Müþteri eklendi");
+		DatabaseLogger logger = new DatabaseLogger();
+		logger.Log("Log mesajý");
+	}
+
+}
