@@ -22,7 +22,7 @@ public class Main {
 		customerService.checkCustomerSingUp(customer4);
 		customerService.checkCustomerSingUp(customer5);
 		
-		System.out.println("\n-----------------------------------------------------------------------------------------\n");
+		System.out.println("\n------------------------------------------------------------------------------------------\n");
 		
 		CustomerService customerService2 = new CustomerManager(new FacebookDao());
 
