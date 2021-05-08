@@ -18,7 +18,7 @@ public class CustomerManager implements CustomerService{
 	}
 
 	@Override
-	public void checkCustomerSingUp(Customer customer) {
+	public void checkCustomerSignUp(Customer customer) {
 		if(!customer.getEmail().matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,6}$")
 			&& customer.getName().length()>=2 
 			&& customer.getLastName().length()>=2
@@ -30,15 +30,15 @@ public class CustomerManager implements CustomerService{
 			System.out.println("Kayýt bilgileriniz hatalý lütfen kontrol ediniz. ");
 			return;
 		}
-		this.customerDao.singUp(customer);
+		this.customerDao.signUp(customer);
 		
 	}
 	
 	@Override
-	public void checkCustomerSingIn(Customer customer) {
+	public void checkCustomerSignIn(Customer customer) {
 		if(customer.getEmail()=="bayramalkan@ogrenci.beykoz.edu.tr"
 			&& customer.getPassword()=="123456") {
-			this.customerDao.singIn(customer);
+			this.customerDao.signIn(customer);
 		}else {
 			System.out.println("Giriþ bilgileriniz hatalý.");
 		}
