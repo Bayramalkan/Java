@@ -36,8 +36,8 @@ public class CustomerManager implements CustomerService{
 	
 	@Override
 	public void checkCustomerSignIn(Customer customer) {
-		if((customer.getEmail()=="bayramalkan@ogrenci.beykoz.edu.tr"
-			|| customer.getEmail()=="bayramalkan@facebook.com")
+		if(customer.getEmail()=="bayramalkan@ogrenci.beykoz.edu.tr"
+			&& customer.getEmail()=="bayramalkan@facebook.com"
 			&& customer.getPassword()=="123456") {
 			this.customerDao.signIn(customer);
 		}else {
